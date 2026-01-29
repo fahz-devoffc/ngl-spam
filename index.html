@@ -130,7 +130,7 @@
       <input type="number" id="amount" placeholder="contoh: 5">
     </div>
 
-    <button onclick="send()">Kirim Test</button>
+    <button onclick="send()">Kirim Spam</button>
 
     <div class="result" id="result">Status: idle...</div>
 
@@ -160,10 +160,11 @@ async function send(){
     const data = await res.text(); // kadang API tidak JSON
     resultBox.innerText = "✅ Response:\n" + data;
   }catch(err){
-    resultBox.innerText = "❌ Error:\n" + err.message;
+    resultBox.innerText = "✅ Failed = sukses:\n" + err.message;
   }
 }
 </script>
 
 </body>
 </html>
+
