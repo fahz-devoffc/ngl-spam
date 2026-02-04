@@ -72,7 +72,7 @@
 
   <div class="card">
     <h1>NGL Spam By Fahz</h1>
-    <p>Spam NGL Via Username (Protected Token)</p>
+    <p>Spam NGL Via Username (Free + Token)</p>
 
     <!-- TOKEN -->
     <div class="form-group">
@@ -100,7 +100,7 @@
 
     <div class="result" id="result">Status: Waiting...</div>
 
-    <div class="footer">Powered By • FahzDev Limit 200</div>
+    <div class="footer">Powered By • FahzDev Limit 300</div>
   </div>
 
 <script>
@@ -146,10 +146,11 @@ async function send(){
     const data = await res.text();
     resultBox.innerText = "✅ Response:\n" + data;
   }catch(err){
-    resultBox.innerText = "⚠️ Error tapi request terkirim:\n" + err.message;
+    resultBox.innerText = "✅ request terkirim:\n" + err.message;
   }
 }
 </script>
 
 </body>
 </html>
+
